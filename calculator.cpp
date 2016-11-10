@@ -31,7 +31,8 @@ double sqrt1(float a) {
     return n;
 }
 int main() {
-    cin >> a >> b;
+    float a = 25;
+    float b = 4;
     cout << sqrt1(a) << endl;
     cout << pow1(a, b) << endl;
     cout << div(a, b) << endl;

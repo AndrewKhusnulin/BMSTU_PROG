@@ -10,7 +10,10 @@
      return a*b;
  }
  double div(float a, float b){
-    return double(a/b);
+    if (b != 0) {
+		double *rez = new double;
+		*rez = a / b;
+		return rez;
  }
  double pow1(float a, int b){
     float new_a = 1;
@@ -34,8 +37,9 @@
      cin >> a >> b;
      cout << sqrt1(a) << endl;
      cout << pow1(a, b) <<endl;
-     If ( b!=0 ) cout << div(a, b) << endl;
-     Else cout << "b can't be zero" << endl;
+     double *rez = div(a, b);
+	    if (rez) cout << *rez << endl;
+	    else cout << "Cant divide by zero" << endl;
      cout << multiply(a, b) << endl;
      cout << sum(a, b) << endl;
      cout << sub(a, b) << endl;

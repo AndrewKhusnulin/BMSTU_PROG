@@ -14,7 +14,9 @@
 		double *rez = new double;
 		*rez = a / b;
 		return rez;
- }
+                }
+	 Else return nulptr;
+ }	 
  double pow1(float a, int b){
     float new_a = 1;
     int i =1;
